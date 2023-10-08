@@ -29,5 +29,11 @@ public class PhoneBookTest {
         // given
         String group = "Семья";
         phoneBook.addGroup(group);
+
+        // when
+        boolean result = phoneBook.addGroup(group);
+
+        // then
+        Assertions.assertTrue(result);
     }
 }
